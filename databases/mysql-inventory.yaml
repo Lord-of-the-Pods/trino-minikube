@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-inventory
+spec:
+  selector:
+    matchLabels:
+      app: mysql-inventory
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mysql-inventory
+    spec:
+      containers:
+        - image: quay.io/debezium/example-mysql:2.4
+          name: mysql-inventory
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: rootpass
+            - name: MYSQL_USER
+              value: mysqluser
+            - name: MYSQL_PASSWORD
+              value: mysqlpw
+          ports:
+            - containerPort: 3306
+              name: mysql-inventory
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-inventory
+spec:
+  ports:
+    - port: 3306
+  selector:
+    app: mysql-inventory
+  clusterIP: None
