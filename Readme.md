@@ -5,7 +5,7 @@ Trino is a distributed query engine that processes data in parallel across multi
 
 **Setup Multiple Databases :**
 
-[How to Setup Sample Databases for This Setup?](Readme.md)
+[How to Setup Sample Databases for This Setup?](SetupDatabases.md)
 
 
 
