@@ -14,13 +14,13 @@ Trino is a distributed query engine that processes data in parallel across multi
 1. Add Helm repo 
 
     ```
-    helm repo add trino https://trinodb.github.io/charts
+    $ helm repo add trino https://trinodb.github.io/charts
     ```
 
 2. Install trino using helm charts 
 
     ```
-    helm install example-trino-cluster trino/trino
+    $ helm install example-trino-cluster trino/trino
     ```
 
 3. **Verify Pods**
@@ -35,15 +35,15 @@ Trino is a distributed query engine that processes data in parallel across multi
 5. **Restart the Deployments for trino**
 
     ```
-    kubectl rollout restart -n trino-superset deployment example-trino-cluster-coordinator
+    $ kubectl rollout restart -n trino-superset deployment example-trino-cluster-coordinator
     ```
 
 6. **Port forward for Trino cli to be able to listen to the trino cluster .**
 
     ```
-    PODNAME=$(kubectl -n trino-superset get pods -o NAME| grep coordinator)
+    $ PODNAME=$(kubectl -n trino-superset get pods -o NAME| grep coordinator)
     
-    kubectl -n trino-superset port-forward $POD_NAME 8080:8080
+    $ kubectl -n trino-superset port-forward $POD_NAME 8080:8080
     ```
 
 **setup Superset** 
@@ -51,19 +51,25 @@ Trino is a distributed query engine that processes data in parallel across multi
 1. **Add the Superset helm repository**
 
    ```
-   helm repo add superset https://apache.github.io/superset
+   $ helm repo add superset https://apache.github.io/superset
     "superset" has been added to your repositories
    ```
 
 2. Install and run
 
    ```
-   helm upgrade --install --values values.yaml superset superset/superset
+   $ helm upgrade --install --values values.yaml superset superset/superset
    ```
 
    use the following values.yaml file for superset to configure trino alchemy library
 
    https://github.com/Lord-of-the-Pods/trino-minikube/blob/3e47a6477740183b88864b68ec2fe15f51a072d8/Superset/values.yaml#L44-L50
+
+3. **Port forward for Trino cli to be able to listen to the trino cluster .**
+
+    ```
+    $ kubectl port-forward service/superset 8088:8088 --namespace superset
+    ```
 
 
 
