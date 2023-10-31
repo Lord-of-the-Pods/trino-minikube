@@ -2,7 +2,7 @@ data:
   mongo.properties: |
     connector.name=mongodb
 
-    mongodb.connection-url=mongodb+srv://abhishek:Abhi401@mymongo.kci9kkq.mongodb.net/
+    mongodb.connection-url=mongodb+srv://user:pass@mymongo.kci9kkq.mongodb.net/
   mysqlinventory.properties: |
     connector.name=mysql
     connection-url=jdbc:mysql://mysql-inventory:3306
