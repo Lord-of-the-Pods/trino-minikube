@@ -50,8 +50,7 @@ Setup Trino on Minikube :
 
 ##### 9. The java application will give you access to the trino cli , fire the queries using the context and calalog name .
 
-
-    <img src="/images/trino-queries.png">
+ <img src="/images/trino-queries.png" width="80%" height="80%">
 
 Setup Superset :
 ----------------
@@ -98,6 +97,6 @@ use the following connectiong string [modify it accordingly]
 
     Goto Sql Lab from top menu and fire your SQL queries .
 
- <img src="/images/trino-queries.png" width="80%" height="80%">
+ <img src="/images/superset-result.png" width="80%" height="80%">
 
 
