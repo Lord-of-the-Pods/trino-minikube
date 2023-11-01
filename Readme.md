@@ -86,7 +86,7 @@ Setup Superset :
 
 Goto **Settings > Database Connections** and click on +Database Icon to create a new Database Connection
     
-<img src="/images/trino-create-conn.png" width="20%" height="20%">
+<img src="/images/trino-create-conn.png" width="30%" height="30%">
 
 use the following connectiong string [modify it accordingly]
 
@@ -98,6 +98,6 @@ use the following connectiong string [modify it accordingly]
 
     Goto Sql Lab from top menu and fire your SQL queries .
 
-    <img src="/images/trino-queries.png">
+ <img src="/images/trino-queries.png" width="80%" height="80%">
 
 
