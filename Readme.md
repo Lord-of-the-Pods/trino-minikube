@@ -45,6 +45,14 @@ Trino is a distributed query engine that processes data in parallel across multi
     
     $ kubectl -n trino-superset port-forward $POD_NAME 8080:8080
     ```
+7. Download the trino-cli from the following locaton .
+
+8. Rename and run the .jar file
+
+9. The java application will give you access to the trino cli , fire the queries using the context and calalog name .
+
+
+    <img src="/images/trino-queries.png">
 
 **setup Superset** 
 
