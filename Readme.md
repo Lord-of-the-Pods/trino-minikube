@@ -85,7 +85,24 @@ Setup Superset :
     ```
 
 
+##### 4. Login into Superset with following credentials : admin / admin
+
+##### 5. Create a Trino Connection in Superset
+
+    Goto **Settings > Database Connections** and click on +Database Icon to create a new Database Connection
+    
+    <img src="/images/trino-create-conn.png">
+
+    use the following connectiong string [modify it accordingly]
+
+    ```
+    trino://trino@example-trino-cluster.trino-superset:8080
+    ```
+
+##### 5. Fire queries to your databases from Superset UI .
+
+    Goto Sql Lab from top menu and fire your SQL queries .
+
+    <img src="/images/trino-queries.png">
 
 
-
-trino://trino@example-trino-cluster.trino-superset:8080
