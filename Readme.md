@@ -30,7 +30,7 @@ Trino is a distributed query engine that processes data in parallel across multi
 
     example-trino-cluster-catalog
     
-    https://github.com/Lord-of-the-Pods/trino-minikube/blob/3e47a6477740183b88864b68ec2fe15f51a072d8/trino/trino-catalog.text#L1-L21
+    https://github.com/Lord-of-the-Pods/trino-minikube/blob/df8d28a6822921d0f87712a5eb75573b354c2171/trino/trino-catalog.text#L1-L21
 
 5. **Restart the Deployments for trino**
 
