@@ -4,6 +4,7 @@ What is Trino?
 
 Trino is a distributed query engine that processes data in parallel across multiple servers. There are two types of Trino servers, coordinators and workers. The following sections describe these servers and other components of Trino’s architecture.
 
+<img src="/images/trino-superset.png" width="40%" height="40%">
 
 Setup Multiple Databases :
 --------------------------
@@ -85,7 +86,7 @@ Setup Superset :
 
 Goto **Settings > Database Connections** and click on +Database Icon to create a new Database Connection
     
-<img src="/images/trino-create-conn.png">
+<img src="/images/trino-create-conn.png" width="40%" height="40%">
 
 use the following connectiong string [modify it accordingly]
 
