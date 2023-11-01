@@ -4,7 +4,7 @@ What is Trino?
 
 Trino is a distributed query engine that processes data in parallel across multiple servers. There are two types of Trino servers, coordinators and workers. The following sections describe these servers and other components of Trino’s architecture.
 
-<img src="/images/trino-superset.png" width="40%" height="40%">
+<img src="/images/trino-superset.jpg" width="40%" height="40%">
 
 Setup Multiple Databases :
 --------------------------
