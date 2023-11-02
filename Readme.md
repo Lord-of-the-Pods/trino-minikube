@@ -39,7 +39,7 @@ Setup Trino on Minikube :
 ##### 4. Update the Config Map [example-trino-cluster-catalog] for trino :
 
     
-    https://github.com/Lord-of-the-Pods/trino-minikube/blob/df8d28a6822921d0f87712a5eb75573b354c2171/trino/trino-catalog.text#L1-L21
+   https://github.com/Lord-of-the-Pods/trino-minikube/blob/df8d28a6822921d0f87712a5eb75573b354c2171/trino/trino-catalog.text#L1-L21
 
 ##### 5. Restart the Deployments for trino
 
