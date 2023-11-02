@@ -6,6 +6,14 @@ Trino is a distributed query engine that processes data in parallel across multi
 
 <img src="/images/trino-superset.jpg" width="60%" height="60%" >
 
+For this project I have used the following database to be the backends of trino .
+1. Mysql - Inventory
+2. Mysql - Petclinic
+3. Mongodb Atlas
+
+   I have setup trino and Superset to fetch data from the above DB's .
+
+
 Setup Multiple Databases :
 --------------------------
 
