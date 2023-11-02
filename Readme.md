@@ -71,21 +71,21 @@ Setup Superset :
    "superset" has been added to your repositories
    ```
 
-##### 2. Install and run
+##### 2. Install Superset using heml and custom values.yaml with sqlalchemy library
+
+   Use the following values.yaml file for superset to configure trino sqlalchemy library
+
+   https://github.com/Lord-of-the-Pods/trino-minikube/blob/3e47a6477740183b88864b68ec2fe15f51a072d8/Superset/values.yaml#L44-L50
 
    ```
    $ helm upgrade --install --values values.yaml superset superset/superset
    ```
 
-   use the following values.yaml file for superset to configure trino alchemy library
-
-   https://github.com/Lord-of-the-Pods/trino-minikube/blob/3e47a6477740183b88864b68ec2fe15f51a072d8/Superset/values.yaml#L44-L50
 
 ##### 3. Port forward for Trino cli to be able to listen to the trino cluster .
 
     $ kubectl port-forward service/superset 8088:8088 --namespace superset
     
-
 
 ##### 4. Login into Superset with following credentials : admin / admin
 
