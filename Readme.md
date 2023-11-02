@@ -1,10 +1,21 @@
 
+Setup Trino and Superset on Minikube
+=====================================
+
+
+
 What is Trino?
-==============
+--------------
 
 Trino is a distributed query engine that processes data in parallel across multiple servers. There are two types of Trino servers, coordinators and workers. The following sections describe these servers and other components of Trino’s architecture.
 
-<img src="/images/trino-superset.jpg" width="60%" height="60%" >
+What is Apache Superset?
+-------------------------
+
+Apache Superset is a modern, enterprise-ready business intelligence web application. It is fast, lightweight, intuitive, and loaded with options that make it easy for users of all skill sets to explore and visualize their data, from simple pie charts to highly detailed deck.gl geospatial charts.
+
+Project Aim
+------------
 
 For this project I have used the following database to be the backends of trino .
 1. Mysql - Inventory
@@ -13,6 +24,7 @@ For this project I have used the following database to be the backends of trino 
 
    I have setup trino and Superset to fetch data from the above DB's .
 
+<img src="/images/trino-superset.jpg" width="60%" height="60%" >
 
 Setup Multiple Databases :
 --------------------------
@@ -95,15 +107,14 @@ Goto **Settings > Database Connections** and click on +Database Icon to create a
     
 <img src="/images/trino-create-conn.png" width="30%" height="30%">
 
-use the following connectiong string [modify it accordingly]
-
+ use the following connectiong string [modify it accordingly]
     
     trino://trino@example-trino-cluster.trino-superset:8080
     
 
 ##### 5. Fire queries to your databases from Superset UI .
 
-    Goto Sql Lab from top menu and fire your SQL queries .
+ Goto Sql Lab from top menu and fire your SQL queries .
 
  <img src="/images/superset-result.png" width="80%" height="80%">
 
