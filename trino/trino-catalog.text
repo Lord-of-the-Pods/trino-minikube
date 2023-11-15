@@ -13,6 +13,11 @@ data:
     connection-url=jdbc:mysql://mysql-petclinic:3306
     connection-user=petclinic
     connection-password=petclinic
+  postgresworlddb.properties: |
+    connector.name=postgresql
+    connection-url=jdbc:postgresql://postgres-world:5432/world-db
+    connection-user=world
+    connection-password=world123
   tpcds.properties: |
     connector.name=tpcds
     tpcds.splits-per-node=4
