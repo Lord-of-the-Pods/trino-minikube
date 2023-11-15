@@ -118,4 +118,11 @@ Goto **Settings > Database Connections** and click on +Database Icon to create a
 
  <img src="/images/superset-result.png" width="80%" height="80%">
 
+   ```
+   SELECT * from mysqlinventory.inventory.customers;
+   
+   SELECT * from mysqlpetclinic.petclinic.owners;
+   
+   SELECT * from mongo.sample_mflix.users where name like "%Stark%";
+   ```
 
